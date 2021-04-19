@@ -1,35 +1,20 @@
+
 import java.util.Scanner;
 import java.util.random;
+import java.util.concurrent;
 
 
 public class DadJokeMaker {
-
     public static void main(String[] args) {
 
-        int lettuce = "lettuce!";
-        int chug_jug = "chug jug";
-        int boo = "boo";
-        int rap = "rap";
+        string[] arr={"lettuce", "owl", "joke3"};
+        random r=new Random();
+        int jokeStarter =r.nextInt(arr.length);
 
         Scanner reader = new Scanner(System.in);
+        system.out.printLn("Knock Knock! (Psst! your supposed to say 'Whose there' :D!");
+        TimeUnit.SECONDS.sleep(10);
 
-        Random rand = new Random();
-
-        system.out.print("Random integers for number output; disregard "+rand_Int1);
-
-        system.out.printLn("Knock Knock (Psst! your supposed to say 'Whose there' :D!");
-
-        if rand_Int1=1;
-            system.out.print(lettuce);
-        
-        if rand_Int1=2;
-            system.out.print(chug_jug);
-        
-        if rand_Int1=3;
-            system.out.print(boo);
-
-        if rand_Int1=4;
-            system.out.print(rap);
-
+        system.out.printLn(arr[jokeStarter]);       
     }
 }
