@@ -4,16 +4,10 @@ import java.util.Random;
 
 public class DadJokeMaker {
     public static void main(String[] args) {
-        String[] arr = {
-            "lettuce", 
-            "owl", 
-            "joke4"
-        };
-
-        String[] jokeAnswers = {
-            "lettuce in", 
-            "owl be yours", 
-            "joke4 you"
+        String[][] arr = {
+            {"lettuce", "lettuce out!"}, 
+            {"owl", "owl be yours!"}, 
+            {"joke4", "joke4 you!"}
         };
 
         Random r = new Random();
@@ -27,12 +21,12 @@ public class DadJokeMaker {
 
             if(!whoIsThereQuestion.equals("Whose there")) continue;
 
-            System.out.println(arr[jokeIndex]);
+            System.out.println(arr[jokeIndex][0]);
 
             String who = reader.nextLine();
-            if(!who.equals(arr[jokeIndex] + " who")) continue;
+            if(!who.equals(arr[jokeIndex][0] + " who")) continue;
 
-            System.out.println(jokeAnswers[jokeIndex]);
+            System.out.println(arr[jokeIndex][1]);
 
             break;
         }
